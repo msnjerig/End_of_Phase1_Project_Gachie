@@ -24,13 +24,17 @@ data_df.head()```
 
 **checking the data type**
 ```data_df.dtypes```
+
 **checking the structure**
 ```data_df.info()```
+
 **check for missing values**
 ```data_df.isnull().sum()```
+
 **check for the percentage of missing data rounded off to 2 decimal places**
 ```percentage_missing = np.round(((data_df.isnull().sum() / len(data_df)) * 100), 2)
 percentage_missing.sort_values(ascending=False)```
+
 **Check for duplicated data**
 ```data_df.duplicated().any```
 
