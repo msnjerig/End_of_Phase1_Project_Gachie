@@ -11,12 +11,12 @@ The questions we sought to answer to establish the low-risk aircraft that the he
 2. Which aircraft have been involved in the fewest accidents?  
 3. What is the trend in accidents/incidents cases over the years in the industry?
 ## Loading the data
-load the libraries
-import os
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+**load the libraries**
+    import os
+    import pandas as pd
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import seaborn as sns
 
 **load the file**
 data_df = pd.read_csv("AviationData.csv", encoding="ISO-8859-1", low_memory=False)
