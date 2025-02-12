@@ -18,18 +18,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-load the file
+**load the file**
 data_df = pd.read_csv("AviationData.csv", encoding="ISO-8859-1", low_memory=False)
-loading only the first 5 rows
 data_df.head()
 
-checking the data type
+**checking the data type**
 data_df.dtypes
-checking the structure
+**checking the structure**
 data_df.info()
-check for missing values
+**check for missing values**
 data_df.isnull().sum()
-check for the percentage of missing data rounded off to 2 decimal places
+**check for the percentage of missing data rounded off to 2 decimal places**
 percentage_missing = np.round(((data_df.isnull().sum() / len(data_df)) * 100), 2)
 percentage_missing.sort_values(ascending=False)
 **Check for duplicated data**
