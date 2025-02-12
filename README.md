@@ -19,20 +19,20 @@ import matplotlib.pyplot as plt
 import seaborn as sns```
 
 **load the file**
-data_df = pd.read_csv("AviationData.csv", encoding="ISO-8859-1", low_memory=False)
-data_df.head()
+```data_df = pd.read_csv("AviationData.csv", encoding="ISO-8859-1", low_memory=False)
+data_df.head()```
 
 **checking the data type**
-data_df.dtypes
+```data_df.dtypes```
 **checking the structure**
-data_df.info()
+```data_df.info()```
 **check for missing values**
-data_df.isnull().sum()
+```data_df.isnull().sum()```
 **check for the percentage of missing data rounded off to 2 decimal places**
-percentage_missing = np.round(((data_df.isnull().sum() / len(data_df)) * 100), 2)
-percentage_missing.sort_values(ascending=False)
+```percentage_missing = np.round(((data_df.isnull().sum() / len(data_df)) * 100), 2)
+percentage_missing.sort_values(ascending=False)```
 **Check for duplicated data**
-data_df.duplicated().any
+```data_df.duplicated().any```
 
 From the above, there is no duplicated data but there are columns that are highly missing data and some of these columns are crucial for our analysis. 
 We now have an idea of what the data looks like and established that there are missing values in majority of the columns. Though, it is worth noting that the categorical columns have few data missing.
